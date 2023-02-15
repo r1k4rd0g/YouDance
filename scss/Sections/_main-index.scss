@@ -1,0 +1,53 @@
+/*contenido principal con mobile last*/
+.main-index{
+    min-height: 60vh;
+}
+.Clases-Principales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E5383B;
+    font-size: 6rem;
+    font-weight: bold;
+    background-color: $Color8;
+    min-height: 15vh;
+}
+.main__ritmos {
+    border: 2px black;
+    /*display: flex;*/
+    justify-content: center;
+    width: 300px;
+    height: 100px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: none;
+}
+.ritmos { 
+    display: grid;    
+    grid-template-columns: repeat(3,  33.33%);
+    justify-items: center;
+    align-content: center;
+    min-height: 40vh;
+    /*width: 100%;*/
+    /*grid-template-rows: 1fr;*/
+    /*gap: 1rem;*/
+    /*grid-auto-flow: row;*/
+    grid-template-areas:
+        "Salsa Bachata Reggaeton";   
+}
+.ritmoflex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-baile{
+    border-radius: 15%;
+    width: 25vw;
+}
+.tit-ritmo{
+    font-size: 2.5rem;
+    text-align: center;
+    color: #335C67;
+    font-weight: bold;
+}

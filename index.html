@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> <!--link de animaciones-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> <!--link de bootstrap-->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>YouDance La Costa</title>
+</head>
+<body class="body">
+    <!-- Encabezado -->
+    <header class="header">            
+        <!-- navegación etiqueta nav -->
+        <nav class="navegador">
+            <div class="menu">
+                <ul class="lista-menu">
+                    <li style="--clr:#FFF3B0" class="menu"><a class="etalistmenu" href="./Secciones/Clases.html" data-text="Clases"> Clases</a></li>
+                    <li style="--clr:#FFF3B0" class="menu"><a class="etalistmenu" href="./Secciones/Contacto.html" data-text="Contacto"> Contacto</a></li>
+                    <li style="--clr:#FFF3B0" class="menu"><a class="etalistmenu" href="./Secciones/Galeria.html" data-text="Galeria"> Galeria</a></li>
+                    <li style="--clr:#FFF3B0" class="menu"><a class="etalistmenu" href="./Secciones/Staff.html" data-text="Staff"> Staff</a></li>
+                    <li style="--clr:#FFF3B0" class="menu"><a class="etalistmenu" href="./Secciones/Preguntas-frecuentes.html" data-text="FAQ"> FAQ</a></li>
+                </ul>
+            </div>        
+        </nav>
+        <div class="fondo_logo">  
+            <a href="./index.html">
+            <img src="./Recursos/Yousinfondo.png" alt="logo de academia you" class="img-logo animate__animated animate__zoomIn">
+            </a>
+        </div>
+        <!-- logo siempre afuera de nav -->  
+    </header>
+    <!-- contenido principal -->
+    <main class="main-index">
+        <section class="Clases">
+            <h1 class="Clases-Principales">Clases Principales</h1>
+            <section class="ritmos">
+                <div class="Salsa ritmoflex">
+                    <h2 class="tit-ritmo">Salsa</h2>
+                    <img src="./Recursos/salsa2.png" alt="Salsa-img" class="img-baile">
+                </div>                
+                <div class="Bachata ritmoflex">
+                    <h2 class="tit-ritmo">Bachata</h2>
+                    <img src="./Recursos/Bachata2.png" alt="Bachata-img" class="img-baile">
+                </div>
+                <div class="Reggaeton ritmoflex">
+                    <h2 class="tit-ritmo">Reggaeton</h2>
+                    <img src="./Recursos/R.png" alt="Reggaeton-img" class="img-baile">
+                </div>
+            </section>
+        </section>
+    </main>
+    <!-- pie de pagina -->
+    <footer class="footer">
+        <H3>Redes</H3>
+        <ul class="footer__Redes">
+            <li><a href="https://www.instagram.com/youdancelacosta/?hl=es" target="_blank">Instagram</a>            
+            </li>
+            <li><a href="https://www.youtube.com/watch?v=cYdssMDVUtU&t=1240s" target="_blank">Youtube</a>
+            </li>
+        </ul>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+<script src="./js/wow.js"></script>
+    <script>
+        new wow().init();
+    </script>
+</html>

@@ -1,0 +1,69 @@
+.tit-formulario{
+    padding: 1rem;
+    text-align: center;
+}
+.box-datos{
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 300px;
+    width: 400px;
+}
+.box-datos input{
+    background-color:#F5EBE0;
+    text-align: start;
+    font-size: 1.5rem;
+}
+.box-datos textarea{
+    background-color:#F5EBE0;
+}
+.grid-contacto{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+        "formulario mapa";
+    justify-items: center;
+    align-items: center;
+    gap: 4rem;
+
+}
+.main-contacto{
+    background-color: #B1A7A6;
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 1rem;
+}
+.mapa{
+    animation-name: aparicio;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+}
+.mapa iframe{
+    width: 400px;
+    height: 300px;
+}
+
+@keyframes aparicio{
+    10%{transform: translatey(100);
+    
+    }
+    25%{transform: translatex(80px);
+    
+    }
+    50%{transform: translatey(50px);
+    
+    }
+    80%{transform: translatey(25px);
+    
+    }
+    100%{transform: translatey(0px);
+    
+    }
+}

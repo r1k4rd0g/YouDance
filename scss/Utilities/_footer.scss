@@ -1,0 +1,22 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    /*background: linear-gradient (35 deg rgba(211,211,211,1) 10%, rgba(177,167,166,1) 20%, rgba(229,56,59,1) 60%,
+    rgba(186,24,27,1) 80%);*/
+    min-height: 15vh;
+}
+.footer__Redes li{
+    color: #370617; 
+    border: 3px solid;
+    display: inline-block;
+    padding: 3px;
+    position: relative;
+    list-style: none;
+    font-size: 25px;
+}
+.footer__Redes a{
+    color: #9D0208;
+    text-decoration:  none;
+}
