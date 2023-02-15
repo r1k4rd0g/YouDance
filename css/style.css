@@ -1,13 +1,4 @@
 /*RECURSOS*/
-@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,400;0,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,400;0,700;1,900&display=swap");
-@use "typo";
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "typo.$typoprincipal"; }
-
 /*Colores a usar en la web*/
 /*~ Rich Black FOGRA 39*/
 /*~ Eerie Black*/
@@ -25,6 +16,13 @@
         Regular 400
         Black 900 Italic
         font-family: 'Source Serif Pro', serif;*/
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,400;0,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Serif Pro", serif; }
+
 /*SECCIONES*/
 .body {
   background: white;
@@ -36,7 +34,7 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  justify-content: space-between; }
+  justify-content: center; }
 
 .navegador {
   min-height: 3vh; }
@@ -44,8 +42,8 @@
 .lista-menu {
   display: flex;
   justify-content: center;
-  padding: 1rem;
-  margin: 1rem;
+  /*padding: 1rem;*/
+  /*margin: 1rem;*/
   flex-wrap: wrap;
   justify-content: space-around;
   color: #B1A7A6;
@@ -97,6 +95,32 @@
   padding: .5rem;
   object-fit: cover; }
 
+/* cambios para adaptar a 8408px y menos*/
+@media (max-width: 840px) {
+  .lista-menu {
+    font-size: 10px; }
+  .lista-menu li a {
+    font-size: 1rem;
+    line-height: 1rem; }
+  .img-logo {
+    min-width: 100px;
+    height: 200px; } }
+
+/*cambios para adaptar a 552px o menos*/
+@media (max-width: 552px) {
+  .lista-menu {
+    font-size: .8rem; }
+  .lista-menu li a {
+    font-size: .8rem;
+    line-height: .8rem; }
+  .img-logo {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    padding: .1rem; } }
+
 /*contenido principal con mobile last*/
 .main-index {
   min-height: 60vh; }
@@ -147,6 +171,40 @@
   text-align: center;
   color: #335C67;
   font-weight: bold; }
+
+@media (max-width: 840px) {
+  .Clases-Principales {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E5383B;
+    background-color: #D3D3D3;
+    height: 10vh; } }
+
+@media (max-width: 552px) {
+  .Clases-Principales {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E5383B;
+    background-color: #D3D3D3;
+    height: 5vh;
+    padding: .5rem; }
+  .ritmos {
+    display: grid;
+    grid-template-rows: repeat(3, 20vh);
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-content: center;
+    /*height: 65vh;*/
+    width: 100vw;
+    gap: 0px 0px;
+    /*grid-auto-flow: row;*/
+    grid-template-areas: "Salsa" "Bachata" "Reggaeton"; }
+  .img-baile {
+    text-align: center; } }
 
 .tit-formulario {
   padding: 1rem;
@@ -209,47 +267,7 @@
   100% {
     transform: translatey(0px); } }
 
-.footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /*background: linear-gradient (35 deg rgba(211,211,211,1) 10%, rgba(177,167,166,1) 20%, rgba(229,56,59,1) 60%,
-    rgba(186,24,27,1) 80%);*/
-  min-height: 15vh; }
-
-.footer__Redes li {
-  color: #370617;
-  border: 3px solid;
-  display: inline-block;
-  padding: 3px;
-  position: relative;
-  list-style: none;
-  font-size: 25px; }
-
-.footer__Redes a {
-  color: #9D0208;
-  text-decoration: none; }
-
-/* cambios para adaptar a 8408px y menos*/
 @media (max-width: 840px) {
-  .lista-menu {
-    font-size: 10px; }
-  .lista-menu li a {
-    font-size: 1rem;
-    line-height: 1rem; }
-  .Clases-Principales {
-    font-size: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #E5383B;
-    background-color: #D3D3D3;
-    height: 10vh; }
-  .img-logo {
-    /*margin: auto;*/
-    width: 15vh;
-    display: flex;
-    justify-content: center; }
   /*cambios en mapa de contacto*/
   .grid-contacto {
     display: grid;
@@ -279,40 +297,43 @@
     width: 500px;
     height: 350px; } }
 
-/*cambios para adaptar a 552px o menos*/
+.staff {
+  display: grid;
+  grid-template-columns: repeat(3, 33.33%);
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "Cyn D Nat"; }
+
+.Cyn {
+  grid-area: Cyn; }
+
+.Nat {
+  grid-area: Nat; }
+
+.D {
+  grid-area: D; }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*background: linear-gradient (35 deg rgba(211,211,211,1) 10%, rgba(177,167,166,1) 20%, rgba(229,56,59,1) 60%,
+    rgba(186,24,27,1) 80%);*/
+  min-height: 15vh; }
+
+.footer__Redes li {
+  color: #370617;
+  border: 3px solid;
+  display: inline-block;
+  padding: 3px;
+  position: relative;
+  list-style: none;
+  font-size: 25px; }
+
+.footer__Redes a {
+  color: #9D0208;
+  text-decoration: none; }
+
 @media (max-width: 552px) {
-  .lista-menu {
-    font-size: .8rem; }
-  .lista-menu li a {
-    font-size: .8rem;
-    line-height: .8rem; }
-  .img-logo {
-    /*margin: auto;*/
-    width: 45vw;
-    height: 20vh;
-    display: flex;
-    justify-content: center;
-    object-fit: cover; }
-  .Clases-Principales {
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #E5383B;
-    background-color: #D3D3D3;
-    height: 5vh; }
-  .ritmos {
-    display: grid;
-    grid-template-rows: repeat(3, 20vh);
-    grid-template-columns: 1fr;
-    justify-items: center;
-    align-content: center;
-    /*height: 65vh;*/
-    width: 100vw;
-    gap: 0px 0px;
-    /*grid-auto-flow: row;*/
-    grid-template-areas: "Salsa" "Bachata" "Reggaeton"; }
-  .img-baile {
-    text-align: center; }
   .footer {
-    height: 15vh; } }
+    min-height: 15vh; } }

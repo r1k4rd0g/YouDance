@@ -20,3 +20,10 @@
     color: #9D0208;
     text-decoration:  none;
 }
+
+@media (max-width: 552px){
+
+    .footer{
+        min-height: 15vh;
+    }
+}

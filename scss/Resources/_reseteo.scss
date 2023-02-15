@@ -1,8 +1,6 @@
-@use "typo";
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "typo.$typoprincipal";
+    font-family: $typoprincipal;
 }

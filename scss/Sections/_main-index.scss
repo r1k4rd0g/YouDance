@@ -51,3 +51,47 @@
     color: #335C67;
     font-weight: bold;
 }
+@media (max-width: 840px){
+    .Clases-Principales{
+        font-size: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #E5383B;
+        background-color: #D3D3D3;
+        height: 10vh;
+    }
+}
+
+@media (max-width: 552px){
+
+    .Clases-Principales{
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #E5383B;
+        background-color: #D3D3D3;
+        height: 5vh;
+        padding: .5rem;
+    }
+    
+        .ritmos { 
+        display: grid;
+        grid-template-rows:repeat(3, 20vh);
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-content: center;
+        /*height: 65vh;*/   
+        width: 100vw;     
+        gap: 0px 0px;
+        /*grid-auto-flow: row;*/
+        grid-template-areas:
+            "Salsa"
+            "Bachata"
+            "Reggaeton";   
+    }
+    .img-baile{
+        text-align: center;
+    }
+}

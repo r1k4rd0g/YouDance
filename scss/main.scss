@@ -1,8 +1,7 @@
-
 /*RECURSOS*/
-@import './Resources/reseteo';
 @import './Resources/colores';
 @import './Resources/typo';
+@import './Resources/reseteo';
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,400;0,700;1,900&display=swap');
 
 /*SECCIONES*/
@@ -11,118 +10,5 @@
 @import './Utilities/header';
 @import './Sections/main-index';
 @import './Sections/Contacto/main-Contacto';
+@import './Sections/Staff/main-staff';
 @import './Utilities/footer';
-
-
-
-
-/* cambios para adaptar a 8408px y menos*/
-@media (max-width: 840px){
-    .lista-menu{
-        font-size: 10px;
-    }
-    .lista-menu li a{
-        font-size: 1rem;
-        line-height: 1rem;
-    }
-    .Clases-Principales{
-        font-size: 3rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #E5383B;
-        background-color: #D3D3D3;
-        height: 10vh;
-    }
-    .img-logo{
-        /*margin: auto;*/
-        width: 15vh;
-        display: flex;
-        justify-content: center;
-    }
-    /*cambios en mapa de contacto*/
-    .grid-contacto{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 50%);
-        grid-template-areas: 
-            "formulario"
-            "mapa";
-        justify-items: center;
-        align-items: center;
-        gap: 8rem;
-        height: 50vh;
-    }
-    .main-contacto{
-        background-color: #B1A7A6;
-        height: 80vh;
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-    }
-    .box-datos{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-    }
-        .mapa iframe{
-        width: 500px;
-        height: 350px;
-    }
-    
-}
-/*cambios para adaptar a 552px o menos*/
-@media (max-width: 552px){
-    .lista-menu{
-        font-size: .8rem;
-    }
-    .lista-menu li a{
-        font-size: .8rem;
-        line-height: .8rem;
-    }
-    .img-logo{
-        /*margin: auto;*/
-        width: 45vw;
-        height: 20vh;
-        display: flex;
-        justify-content: center;
-        object-fit: cover;
-    }
-    
-    .Clases-Principales{
-        font-size: 1.5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #E5383B;
-        background-color: #D3D3D3;
-        height: 5vh;
-    }
-    
-        .ritmos { 
-        display: grid;
-        grid-template-rows:repeat(3, 20vh);
-        grid-template-columns: 1fr;
-        justify-items: center;
-        align-content: center;
-        /*height: 65vh;*/   
-        width: 100vw;     
-        gap: 0px 0px;
-        /*grid-auto-flow: row;*/
-        grid-template-areas:
-            "Salsa"
-            "Bachata"
-            "Reggaeton";   
-    }
-    .img-baile{
-        text-align: center;
-    }
-    .footer{
-        height: 15vh;
-    }
-}
