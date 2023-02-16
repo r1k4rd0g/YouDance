@@ -37,13 +37,16 @@
   justify-content: center; }
 
 .navegador {
-  min-height: 3vh; }
+  padding: .1rem;
+  min-height: 3vh;
+  display: flex;
+  flex-direction: column; }
 
 .lista-menu {
   display: flex;
-  justify-content: center;
-  /*padding: 1rem;*/
-  /*margin: 1rem;*/
+  align-items: center;
+  padding: .1rem;
+  margin: .1rem;
   flex-wrap: wrap;
   justify-content: space-around;
   color: #B1A7A6;
@@ -312,6 +315,9 @@
 
 .D {
   grid-area: D; }
+
+.mainFAQ {
+  min-height: 60vh; }
 
 .footer {
   display: flex;
