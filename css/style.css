@@ -209,6 +209,17 @@
   .img-baile {
     text-align: center; } }
 
+.main-Clases {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.Clases-horarios {
+  display: flex;
+  align-items: center;
+  height: auto;
+  width: auto; }
+
 .tit-formulario {
   padding: 1rem;
   text-align: center; }
@@ -300,6 +311,9 @@
     width: 500px;
     height: 350px; } }
 
+.mainFAQ {
+  min-height: 60vh; }
+
 .staff {
   display: grid;
   grid-template-columns: repeat(3, 33.33%);
@@ -315,9 +329,6 @@
 
 .D {
   grid-area: D; }
-
-.mainFAQ {
-  min-height: 60vh; }
 
 .footer {
   display: flex;
