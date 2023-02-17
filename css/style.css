@@ -315,6 +315,14 @@
   display: grid;
   place-content: center; }
 
+.titulogaleri {
+  align-items: center;
+  color: #E5383B;
+  font-size: 6rem;
+  font-weight: bold;
+  background-color: #D3D3D3;
+  min-height: 15vh; }
+
 .gallery {
   --n: 3;
   /*nº de filas*/
@@ -363,7 +371,7 @@
 .D {
   grid-area: D; }
 
-.basic-flex, .header, .box-datos, .footer {
+.basic-flex, .header, .box-datos, .titulogaleri, .footer {
   display: flex;
   justify-content: center;
   flex-direction: column; }

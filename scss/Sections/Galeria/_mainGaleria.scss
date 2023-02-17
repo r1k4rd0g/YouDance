@@ -4,6 +4,15 @@
     display: grid;
     place-content: center;
 }
+.titulogaleri{
+    @extend .basic-flex;
+    align-items: center;
+    color: #E5383B;
+    font-size: 6rem;
+    font-weight: bold;
+    background-color: $Color8;
+    min-height: 15vh;
+}
 .gallery {
     --n: 3; /*nº de filas*/
     --m: 3; /*nº de columnas*/
