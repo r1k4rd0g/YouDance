@@ -1,10 +1,11 @@
-.footer{
+.basic-flex{
     display: flex;
+    justify-content: center;
     flex-direction: column;
+}
+.footer{
+    @extend .basic-flex;
     align-items: center;
-    
-    /*background: linear-gradient (35 deg rgba(211,211,211,1) 10%, rgba(177,167,166,1) 20%, rgba(229,56,59,1) 60%,
-    rgba(186,24,27,1) 80%);*/
     min-height: 15vh;
 }
 .footer__Redes li{

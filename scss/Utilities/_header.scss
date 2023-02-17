@@ -1,9 +1,7 @@
 .header{
+    @extend .basic-flex; /*definida en _footer.scss*/
     min-height: 25vh;
-    display: flex;
-    flex-direction: column;
     align-items: stretch;
-    justify-content: center;
 
 }
 .navegador{

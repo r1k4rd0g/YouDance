@@ -30,11 +30,9 @@
   /*lo de arriba le da un color de fondo a toda la web*/ }
 
 .header {
+  /*definida en _footer.scss*/
   min-height: 25vh;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: center; }
+  align-items: stretch; }
 
 .navegador {
   padding: .1rem;
@@ -226,11 +224,7 @@
 
 .box-datos {
   padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
+  align-items: stretch;
   height: 300px;
   width: 400px; }
 
@@ -314,6 +308,22 @@
 .mainFAQ {
   min-height: 60vh; }
 
+.gallery {
+  --s: 150px;
+  --g: 10px;
+  display: grid;
+  gap: var(--g);
+  width: calc(3*var(--s) + 2*var(--g));
+  aspect-ratio: 1;
+  grid-template-columns: repeat(7, auto); }
+
+.gallery > img {
+  width: 0;
+  height: 0;
+  min-height: 100%;
+  min-width: 100;
+  object-fit: cover; }
+
 .staff {
   display: grid;
   grid-template-columns: repeat(3, 33.33%);
@@ -330,12 +340,13 @@
 .D {
   grid-area: D; }
 
-.footer {
+.basic-flex, .header, .box-datos, .footer {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  flex-direction: column; }
+
+.footer {
   align-items: center;
-  /*background: linear-gradient (35 deg rgba(211,211,211,1) 10%, rgba(177,167,166,1) 20%, rgba(229,56,59,1) 60%,
-    rgba(186,24,27,1) 80%);*/
   min-height: 15vh; }
 
 .footer__Redes li {

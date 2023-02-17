@@ -3,12 +3,9 @@
     text-align: center;
 }
 .box-datos{
+    @extend .basic-flex;
     padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+    align-items: stretch;
     height: 300px;
     width: 400px;
 }
