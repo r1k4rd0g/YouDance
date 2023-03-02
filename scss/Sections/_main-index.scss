@@ -3,17 +3,23 @@
     min-height: 60vh;
 }
 .Clases-Principales{
+    border: 2px solid #B1A7A6;
+    border-radius: 1%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #E5383B;
-    font-size: 6rem;
-    font-weight: bold;
+    color: #E5383B;    
     background-color: $Color8;
     min-height: 15vh;
 }
+.TituloPrincipal{
+    font-size: 6rem;
+    font-weight: bold;
+    text-shadow: 8px 3px 2.5px  #161A1D;
+}
 .main__ritmos {
-    border: 2px black;
+    border: 2px solid #B1A7A6;
     /*display: flex;*/
     justify-content: center;
     width: 300px;
@@ -48,25 +54,26 @@
 .tit-ritmo{
     font-size: 2.5rem;
     text-align: center;
-    color: #335C67;
+    color: #161A1D;
     font-weight: bold;
 }
 @media (max-width: 840px){
     .Clases-Principales{
-        font-size: 3rem;
-        display: flex;
+                display: flex;
         justify-content: center;
         align-items: center;
         color: #E5383B;
         background-color: #D3D3D3;
         height: 10vh;
     }
+    .TituloPrincipal{
+        font-size: 3rem;
+    }
 }
 
 @media (max-width: 552px){
 
     .Clases-Principales{
-        font-size: 1.5rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -75,7 +82,11 @@
         height: 5vh;
         padding: .5rem;
     }
-    
+    .TituloPrincipal{
+        font-size:1.5rem;
+        text-shadow: none;
+    }
+
         .ritmos { 
         display: grid;
         grid-template-rows:repeat(3, 20vh);

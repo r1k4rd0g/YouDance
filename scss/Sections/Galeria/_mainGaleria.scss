@@ -6,6 +6,7 @@
 }
 .titulogaleri{
     @extend .basic-flex;
+    @extend .TituloPrincipal;
     align-items: center;
     color: #E5383B;
     font-size: 6rem;
@@ -45,4 +46,15 @@
     filter: grayscale(0);
     width: calc(var(--w)*var(--f));
     height: calc(var(--h)*var(--f));
+}
+@media (max-width: 840px){
+    .TituloPrincipal{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 552px){
+    .TituloPrincipal{
+        font-size:1.8rem;
+    }
 }

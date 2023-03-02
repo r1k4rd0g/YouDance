@@ -1,0 +1,9 @@
+{
+    "recommendations": ["formulahendry.auto-close-tag","formulahendry.auto-rename-tag","aaron-bond.better-comments","Blackboxapp.blackbox",
+                        "dzhavat.bracket-pair-toggler","DanielSanMedium.dscodegpt","streetsidesoftware.code-spell-checker",
+                        "usernamehw.errorlens","circlecodesolution.ccs-flutter-color","mhutchie.git-graph","donjayamanne.githistory",
+                        "GitHub.vscode-pull-request-github","eamodio.gitlens","oderwat.indent-rainbow","adamvoss.vscode-languagetool",
+                        "glenn2223.live-sass","ritwickdey.LiveServer","alefragnani.project-manager","ms-vscode-remote.remote-ssh",
+                        "ms-vscode-remote.remote-ssh-edit","ms-vscode.remote-explorer","MS-CEINTL.vscode-language-pack-es","adamvoss.vscode-languagetool-es",
+                        "saber2pr.todolist","Youssef.viow","vscode-icons-team.vscode-icons"],
+}

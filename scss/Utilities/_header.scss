@@ -17,8 +17,7 @@
     margin: .1rem;
     flex-wrap: wrap;
     justify-content: space-around;
-    color: #B1A7A6;
-    background: #252839;
+    background: #161A1D;
     list-style: none;
     font-size: 15px;
     text-align: center;
@@ -35,8 +34,8 @@
     line-height: 2rem;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: transparent;
-    -webkit-text-stroke: 1px rgba(255, 255, 255 ,0.5);
+    /*color: transparent;*/
+    -webkit-text-stroke: 1px rgba(246, 1, 1, 0.5);
 }
 .lista-menu li a::before{
     content: attr( data-text);
