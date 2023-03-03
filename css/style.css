@@ -13,20 +13,18 @@
 /*la url de estos colores es: 
 https://coolors.co/0b090a-161a1d-660708-a4161a-ba181b-e5383b-b1a7a6-d3d3d3-f5f3f4-ffffff*/
 /*Fuente:
-    Source Serif Pro
-        ExtraLight 200
-        Bold 700
-        Regular 400
-        Black 900 Italic
-        font-family: 'Source Serif Pro', serif;*/
-@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,400;0,700;1,900&display=swap");
+    Merriweather Sans
+    Regular 400
+    Medium 500
+    SemiBold 600
+    Bold 700 Italic*/
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,400;0,500;0,600;1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Source Serif Pro", serif; }
+  font-family: "Merriweather Sans", sans-serif; }
 
-/*SECCIONES*/
 .body {
   background: white;
   background: linear-gradient(35deg, white 10%, #f5f3f4 20%, lightgray 30%, #b1a7a6 40%, #e5383b 50%, #ba181b 60%, #a4161a 70%, #660708 80%, #0d0c0d 90%, #0b090a 100%);
@@ -50,8 +48,7 @@ https://coolors.co/0b090a-161a1d-660708-a4161a-ba181b-e5383b-b1a7a6-d3d3d3-f5f3f
   margin: .1rem;
   flex-wrap: wrap;
   justify-content: space-around;
-  color: #252839;
-  background: #252839;
+  /*background: #161A1D;*/
   list-style: none;
   font-size: 15px;
   text-align: center;
@@ -62,19 +59,20 @@ https://coolors.co/0b090a-161a1d-660708-a4161a-ba181b-e5383b-b1a7a6-d3d3d3-f5f3f
   align-content: center; }
 
 .lista-menu li a {
+  text-decoration: none;
   position: relative;
   font-size: 2rem;
   text-decoration: none;
   line-height: 2rem;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: transparent;
+  /*color: transparent;*/
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5); }
 
 .lista-menu li a::before {
   content: attr(data-text);
   position: absolute;
-  color: var(--clr);
+  color: var(#E5383B);
   width: 0;
   overflow: hidden;
   transition: 1s;
