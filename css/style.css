@@ -14,16 +14,18 @@
 https://coolors.co/0b090a-161a1d-660708-a4161a-ba181b-e5383b-b1a7a6-d3d3d3-f5f3f4-ffffff*/
 /*Fuente:
     Merriweather Sans
-    Regular 400
-    Medium 500
+    Light 300
+    Regular 4000
+    Medium 500 Italic
     SemiBold 600
-    Bold 700 Italic*/
-@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,400;0,500;0,600;1,700&display=swap");
+    ExtraBold 800 
+    */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,800;1,500&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Merriweather Sans", sans-serif; }
+  font-family: "Poppins", sans-serif; }
 
 .body {
   background: white;
