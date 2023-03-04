@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*RECURSOS*/
+/*Resources*/
 /*Colores a usar en la web*/
 /*~ Rich Black FOGRA 39*/
 /*~ Eerie Black*/
@@ -13,9 +13,9 @@
 /*la url de estos colores es: 
 https://coolors.co/0b090a-161a1d-660708-a4161a-ba181b-e5383b-b1a7a6-d3d3d3-f5f3f4-ffffff*/
 /*Fuente:
-    Merriweather Sans
+    Poppins Sans-serif
     Light 300
-    Regular 4000
+    Regular 400
     Medium 500 Italic
     SemiBold 600
     ExtraBold 800 
@@ -27,6 +27,7 @@ https://coolors.co/0b090a-161a1d-660708-a4161a-ba181b-e5383b-b1a7a6-d3d3d3-f5f3f
   box-sizing: border-box;
   font-family: "Poppins", sans-serif; }
 
+/*Utilidades y Sections*/
 .body {
   background: white;
   background: linear-gradient(35deg, white 10%, #f5f3f4 20%, lightgray 30%, #b1a7a6 40%, #e5383b 50%, #ba181b 60%, #a4161a 70%, #660708 80%, #0d0c0d 90%, #0b090a 100%);
@@ -50,7 +51,7 @@ https://coolors.co/0b090a-161a1d-660708-a4161a-ba181b-e5383b-b1a7a6-d3d3d3-f5f3f
   margin: .1rem;
   flex-wrap: wrap;
   justify-content: space-around;
-  /*background: #161A1D;*/
+  background: #161A1D;
   list-style: none;
   font-size: 15px;
   text-align: center;
@@ -68,7 +69,7 @@ https://coolors.co/0b090a-161a1d-660708-a4161a-ba181b-e5383b-b1a7a6-d3d3d3-f5f3f
   line-height: 2rem;
   letter-spacing: 3px;
   text-transform: uppercase;
-  /*color: transparent;*/
+  color: transparent;
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5); }
 
 .lista-menu li a::before {
@@ -257,7 +258,7 @@ https://coolors.co/0b090a-161a1d-660708-a4161a-ba181b-e5383b-b1a7a6-d3d3d3-f5f3f
   gap: 4rem; }
 
 .main-contacto {
-  background-color: #B1A7A6;
+  background-color: rgba(177, 167, 166, 0.7);
   height: 60vh;
   width: 100vw;
   display: flex;
