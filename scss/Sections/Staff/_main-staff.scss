@@ -1,3 +1,20 @@
+.main-staff{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+}
+.tit-staff{
+    @extend .basic-flex;
+    @extend .TituloPrincipal;
+    align-items: center;
+    color: #E5383B;
+    font-size: 6rem;
+    font-weight: bold;
+    background-color: $Color8;
+    min-height: 15vh;
+}
 .staff{
     display: grid;
     grid-template-columns: repeat(3, 33.33%);
@@ -9,3 +26,15 @@
 .Cyn { grid-area: Cyn; }
 .Nat { grid-area: Nat; }
 .D { grid-area: D; }
+
+@media (max-width: 840px){
+    .TituloPrincipal{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 552px){
+    .TituloPrincipal{
+        font-size:1.8rem;
+    }
+}

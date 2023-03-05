@@ -68,16 +68,16 @@
     flex-wrap: wrap;
 }
 .img-logo{
-    height: 300px;
+    max-height: 300px;
     display: flex;
     justify-content: center;
-    padding: .5rem;
+    padding: .2rem;
     object-fit: cover;
 }
 /* cambios para adaptar a 8408px y menos*/
 @media (max-width: 840px){
     .lista-menu{
-        font-size: 10px;
+        font-size: 8px;
     }
     .lista-menu li a{
         font-size: 1rem;
@@ -85,7 +85,7 @@
     }
     .img-logo{
         min-width: 100px;
-        height: 200px
+        max-height: 200px
     }
 }
 /*cambios para adaptar a 552px o menos*/

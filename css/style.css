@@ -33,7 +33,7 @@ https://coolors.co/0b090a-161a1d-660708-a4161a-ba181b-e5383b-b1a7a6-d3d3d3-f5f3f
   background: linear-gradient(35deg, white 10%, #f5f3f4 20%, lightgray 30%, #b1a7a6 40%, #e5383b 50%, #ba181b 60%, #a4161a 70%, #660708 80%, #0d0c0d 90%, #0b090a 100%);
   /*lo de arriba le da un color de fondo a toda la web*/ }
 
-.basic-flex, .header, .footer, .tituloclases, .titulocontacto, .box-datos, .titulogaleri {
+.basic-flex, .header, .footer, .tituloclases, .titulocontacto, .box-datos, .titulogaleri, .tit-staff {
   display: flex;
   justify-content: center;
   flex-direction: column; }
@@ -102,22 +102,22 @@ https://coolors.co/0b090a-161a1d-660708-a4161a-ba181b-e5383b-b1a7a6-d3d3d3-f5f3f
   flex-wrap: wrap; }
 
 .img-logo {
-  height: 300px;
+  max-height: 300px;
   display: flex;
   justify-content: center;
-  padding: .5rem;
+  padding: .2rem;
   object-fit: cover; }
 
 /* cambios para adaptar a 8408px y menos*/
 @media (max-width: 840px) {
   .lista-menu {
-    font-size: 10px; }
+    font-size: 8px; }
   .lista-menu li a {
     font-size: 1rem;
     line-height: 1rem; }
   .img-logo {
     min-width: 100px;
-    height: 200px; } }
+    max-height: 200px; } }
 
 /*cambios para adaptar a 552px o menos*/
 @media (max-width: 552px) {
@@ -147,6 +147,11 @@ https://coolors.co/0b090a-161a1d-660708-a4161a-ba181b-e5383b-b1a7a6-d3d3d3-f5f3f
   list-style: none;
   font-size: 25px; }
 
+.tit-redes {
+  font-weight: bold;
+  text-shadow: 2px 1px 1.5px #E5383B;
+  color: #161A1D; }
+
 .footer__Redes a {
   color: #9D0208;
   text-decoration: none; }
@@ -169,7 +174,7 @@ https://coolors.co/0b090a-161a1d-660708-a4161a-ba181b-e5383b-b1a7a6-d3d3d3-f5f3f
   background-color: #D3D3D3;
   min-height: 15vh; }
 
-.TituloPrincipal, .tituloclases, .titulogaleri {
+.TituloPrincipal, .tituloclases, .titulogaleri, .tit-staff {
   font-size: 6rem;
   font-weight: bold;
   color: #E5383B;
@@ -220,7 +225,7 @@ https://coolors.co/0b090a-161a1d-660708-a4161a-ba181b-e5383b-b1a7a6-d3d3d3-f5f3f
     color: #E5383B;
     background-color: #D3D3D3;
     height: 10vh; }
-  .TituloPrincipal, .tituloclases, .titulogaleri {
+  .TituloPrincipal, .tituloclases, .titulogaleri, .tit-staff {
     font-size: 3rem; } }
 
 @media (max-width: 688px) {
@@ -232,7 +237,7 @@ https://coolors.co/0b090a-161a1d-660708-a4161a-ba181b-e5383b-b1a7a6-d3d3d3-f5f3f
     background-color: #D3D3D3;
     height: 5vh;
     padding: .5rem; }
-  .TituloPrincipal, .tituloclases, .titulogaleri {
+  .TituloPrincipal, .tituloclases, .titulogaleri, .tit-staff {
     font-size: 1.5rem;
     text-shadow: none; }
   .ritmos {
@@ -467,12 +472,27 @@ https://coolors.co/0b090a-161a1d-660708-a4161a-ba181b-e5383b-b1a7a6-d3d3d3-f5f3f
   height: calc(var(--h)*var(--f)); }
 
 @media (max-width: 840px) {
-  .TituloPrincipal, .tituloclases, .titulogaleri {
+  .TituloPrincipal, .tituloclases, .titulogaleri, .tit-staff {
     font-size: 3rem; } }
 
 @media (max-width: 552px) {
-  .TituloPrincipal, .tituloclases, .titulogaleri {
+  .TituloPrincipal, .tituloclases, .titulogaleri, .tit-staff {
     font-size: 1.8rem; } }
+
+.main-staff {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: column;
+  height: auto; }
+
+.tit-staff {
+  align-items: center;
+  color: #E5383B;
+  font-size: 6rem;
+  font-weight: bold;
+  background-color: #D3D3D3;
+  min-height: 15vh; }
 
 .staff {
   display: grid;
@@ -489,3 +509,11 @@ https://coolors.co/0b090a-161a1d-660708-a4161a-ba181b-e5383b-b1a7a6-d3d3d3-f5f3f
 
 .D {
   grid-area: D; }
+
+@media (max-width: 840px) {
+  .TituloPrincipal, .tituloclases, .titulogaleri, .tit-staff {
+    font-size: 3rem; } }
+
+@media (max-width: 552px) {
+  .TituloPrincipal, .tituloclases, .titulogaleri, .tit-staff {
+    font-size: 1.8rem; } }
