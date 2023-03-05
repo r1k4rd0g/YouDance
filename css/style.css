@@ -141,7 +141,7 @@ https://coolors.co/0b090a-161a1d-660708-a4161a-ba181b-e5383b-b1a7a6-d3d3d3-f5f3f
   background-color: #D3D3D3;
   min-height: 15vh; }
 
-.TituloPrincipal, .titulogaleri {
+.TituloPrincipal, .tituloclases, .titulogaleri {
   font-size: 6rem;
   font-weight: bold;
   text-shadow: 8px 3px 2.5px  #161A1D; }
@@ -191,7 +191,7 @@ https://coolors.co/0b090a-161a1d-660708-a4161a-ba181b-e5383b-b1a7a6-d3d3d3-f5f3f
     color: #E5383B;
     background-color: #D3D3D3;
     height: 10vh; }
-  .TituloPrincipal, .titulogaleri {
+  .TituloPrincipal, .tituloclases, .titulogaleri {
     font-size: 3rem; } }
 
 @media (max-width: 552px) {
@@ -203,7 +203,7 @@ https://coolors.co/0b090a-161a1d-660708-a4161a-ba181b-e5383b-b1a7a6-d3d3d3-f5f3f
     background-color: #D3D3D3;
     height: 5vh;
     padding: .5rem; }
-  .TituloPrincipal, .titulogaleri {
+  .TituloPrincipal, .tituloclases, .titulogaleri {
     font-size: 1.5rem;
     text-shadow: none; }
   .ritmos {
@@ -225,11 +225,56 @@ https://coolors.co/0b090a-161a1d-660708-a4161a-ba181b-e5383b-b1a7a6-d3d3d3-f5f3f
   align-items: center;
   justify-content: center; }
 
+.tituloclases {
+  align-items: center;
+  color: #E5383B;
+  font-size: 6rem;
+  font-weight: bold;
+  background-color: #D3D3D3;
+  min-height: 15vh; }
+
 .Clases-horarios {
   display: flex;
   align-items: center;
   height: auto;
   width: auto; }
+
+.main-contacto {
+  background-color: rgba(177, 167, 166, 0.7);
+  height: 60vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  padding: .5rem; }
+
+.titulocontacto {
+  font-weight: bold;
+  align-items: center;
+  color: #161A1D;
+  font-size: 2.1rem;
+  font-weight: bold;
+  background-color: rgba(211, 211, 211, 0.6);
+  min-height: 4.5vh;
+  text-align: center; }
+
+.grid-contacto {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "Contdelformulario mapa";
+  justify-items: stretch;
+  align-items: center;
+  gap: 3.5rem; }
+
+.Contdelformulario {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
+.boxformulario {
+  background-color: rgba(211, 211, 211, 0.6); }
 
 .tit-formulario {
   padding: 1rem;
@@ -249,31 +294,20 @@ https://coolors.co/0b090a-161a1d-660708-a4161a-ba181b-e5383b-b1a7a6-d3d3d3-f5f3f
 .box-datos textarea {
   background-color: #F5EBE0; }
 
-.grid-contacto {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "formulario mapa";
-  justify-items: center;
-  align-items: center;
-  gap: 4rem; }
-
-.main-contacto {
-  background-color: rgba(177, 167, 166, 0.7);
-  height: 60vh;
-  width: 100vw;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  padding: 1rem; }
-
 .mapa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   animation-name: aparicio;
   animation-duration: 1s;
   animation-iteration-count: 1;
-  animation-direction: reverse; }
+  animation-direction: reverse;
+  background-color: rgba(211, 211, 211, 0.6);
+  min-width: 510px;
+  min-height: 369px; }
 
 .mapa iframe {
-  width: 400px;
+  width: 500px;
   height: 300px; }
 
 @keyframes aparicio {
@@ -290,32 +324,54 @@ https://coolors.co/0b090a-161a1d-660708-a4161a-ba181b-e5383b-b1a7a6-d3d3d3-f5f3f
 
 @media (max-width: 840px) {
   /*cambios en mapa de contacto*/
-  .grid-contacto {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 50%);
-    grid-template-areas: "formulario" "mapa";
-    justify-items: center;
-    align-items: center;
-    gap: 8rem;
-    height: 50vh; }
   .main-contacto {
-    background-color: #B1A7A6;
-    height: 80vh;
+    min-height: 90vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
-    justify-content: center; }
+    justify-content: space-evenly; }
+  .grid-contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 50%);
+    grid-template-areas: "Contdelformulario" "mapa";
+    justify-items: center;
+    align-items: center;
+    gap: 5rem;
+    height: 50vh; }
   .box-datos {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    align-items: center; }
+    align-items: stretch; }
   .mapa iframe {
     width: 500px;
+    height: 350px; } }
+
+@media (max-width: 425px) {
+  .titulocontacto {
+    font-size: 1.5rem; }
+  .grid-contacto {
+    display: grid;
+    grid-template-columns: repeat(1, 70%);
+    grid-template-rows: repeat(2, 50%);
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    min-height: 50vh;
+    min-width: 325px; }
+  .box-datos {
+    max-width: 300px;
+    display: flex;
+    align-items: stretch; }
+  .mapa {
+    min-width: 325px;
+    min-height: 369px; }
+  .mapa iframe {
+    width: 310px;
     height: 350px; } }
 
 .mainFAQ {
@@ -368,11 +424,11 @@ https://coolors.co/0b090a-161a1d-660708-a4161a-ba181b-e5383b-b1a7a6-d3d3d3-f5f3f
   height: calc(var(--h)*var(--f)); }
 
 @media (max-width: 840px) {
-  .TituloPrincipal, .titulogaleri {
+  .TituloPrincipal, .tituloclases, .titulogaleri {
     font-size: 3rem; } }
 
 @media (max-width: 552px) {
-  .TituloPrincipal, .titulogaleri {
+  .TituloPrincipal, .tituloclases, .titulogaleri {
     font-size: 1.8rem; } }
 
 .staff {
@@ -391,7 +447,7 @@ https://coolors.co/0b090a-161a1d-660708-a4161a-ba181b-e5383b-b1a7a6-d3d3d3-f5f3f
 .D {
   grid-area: D; }
 
-.basic-flex, .header, .box-datos, .titulogaleri, .footer {
+.basic-flex, .header, .tituloclases, .titulocontacto, .box-datos, .titulogaleri, .footer {
   display: flex;
   justify-content: center;
   flex-direction: column; }
