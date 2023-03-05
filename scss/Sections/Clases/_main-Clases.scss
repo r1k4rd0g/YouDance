@@ -3,6 +3,16 @@
     align-items: center;
     justify-content: center;
 }
+.tituloclases{
+    @extend .basic-flex;
+    @extend .TituloPrincipal;
+    align-items: center;
+    color: #E5383B;
+    font-size: 6rem;
+    font-weight: bold;
+    background-color: $Color8;
+    min-height: 15vh;
+}
 .Clases-horarios{
     display: flex;
     align-items: center;
