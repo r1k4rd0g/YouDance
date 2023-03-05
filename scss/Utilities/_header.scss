@@ -1,3 +1,8 @@
+.basic-flex{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 .header{
     @extend .basic-flex; /*definida en _footer.scss*/
     min-height: 25vh;

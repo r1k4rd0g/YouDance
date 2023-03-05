@@ -33,6 +33,11 @@ https://coolors.co/0b090a-161a1d-660708-a4161a-ba181b-e5383b-b1a7a6-d3d3d3-f5f3f
   background: linear-gradient(35deg, white 10%, #f5f3f4 20%, lightgray 30%, #b1a7a6 40%, #e5383b 50%, #ba181b 60%, #a4161a 70%, #660708 80%, #0d0c0d 90%, #0b090a 100%);
   /*lo de arriba le da un color de fondo a toda la web*/ }
 
+.basic-flex, .header, .footer, .tituloclases, .titulocontacto, .box-datos, .titulogaleri {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
 .header {
   /*definida en _footer.scss*/
   min-height: 25vh;
@@ -126,6 +131,27 @@ https://coolors.co/0b090a-161a1d-660708-a4161a-ba181b-e5383b-b1a7a6-d3d3d3-f5f3f
     object-fit: cover;
     padding: .1rem; } }
 
+.footer {
+  align-items: center;
+  min-height: 15vh; }
+
+.footer__Redes li {
+  color: #370617;
+  border: 3px solid;
+  display: inline-block;
+  padding: 3px;
+  position: relative;
+  list-style: none;
+  font-size: 25px; }
+
+.footer__Redes a {
+  color: #9D0208;
+  text-decoration: none; }
+
+@media (max-width: 552px) {
+  .footer {
+    min-height: 15vh; } }
+
 /*contenido principal con mobile last*/
 .main-index {
   min-height: 60vh; }
@@ -137,13 +163,13 @@ https://coolors.co/0b090a-161a1d-660708-a4161a-ba181b-e5383b-b1a7a6-d3d3d3-f5f3f
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #E5383B;
   background-color: #D3D3D3;
   min-height: 15vh; }
 
 .TituloPrincipal, .tituloclases, .titulogaleri {
   font-size: 6rem;
   font-weight: bold;
+  color: #E5383B;
   text-shadow: 8px 3px 2.5px  #161A1D; }
 
 .main__ritmos {
@@ -446,29 +472,3 @@ https://coolors.co/0b090a-161a1d-660708-a4161a-ba181b-e5383b-b1a7a6-d3d3d3-f5f3f
 
 .D {
   grid-area: D; }
-
-.basic-flex, .header, .tituloclases, .titulocontacto, .box-datos, .titulogaleri, .footer {
-  display: flex;
-  justify-content: center;
-  flex-direction: column; }
-
-.footer {
-  align-items: center;
-  min-height: 15vh; }
-
-.footer__Redes li {
-  color: #370617;
-  border: 3px solid;
-  display: inline-block;
-  padding: 3px;
-  position: relative;
-  list-style: none;
-  font-size: 25px; }
-
-.footer__Redes a {
-  color: #9D0208;
-  text-decoration: none; }
-
-@media (max-width: 552px) {
-  .footer {
-    min-height: 15vh; } }
