@@ -4,7 +4,7 @@
 }
 .Clases-Principales{
     border: 2px solid #B1A7A6;
-    border-radius: 1%;
+    border-radius:2%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -57,7 +57,7 @@
     color: #161A1D;
     font-weight: bold;
 }
-@media (max-width: 840px){
+@media (max-width: 940px){
     .Clases-Principales{
                 display: flex;
         justify-content: center;
@@ -71,7 +71,7 @@
     }
 }
 
-@media (max-width: 552px){
+@media (max-width: 688px){
 
     .Clases-Principales{
         display: flex;
@@ -93,7 +93,7 @@
         grid-template-columns: 1fr;
         justify-items: center;
         align-content: center;
-        /*height: 65vh;*/   
+        height: 65vh;  
         width: 100vw;     
         gap: 0px 0px;
         /*grid-auto-flow: row;*/
@@ -102,7 +102,12 @@
             "Bachata"
             "Reggaeton";   
     }
-    .img-baile{
-        text-align: center;
+    .ritmoflex{
+        min-width: 310px;
+        min-height: 150px;
     }
+    /*.img-baile{
+        text-align: center;
+        ;
+    }*/
 }
