@@ -1,21 +1,49 @@
 .footer{
     @extend .basic-flex;
     align-items: center;
-    min-height: 15vh;
-}
-.footer__Redes li{
-    color: #370617; 
-    border: 3px solid;
-    display: inline-block;
-    padding: 3px;
-    position: relative;
-    list-style: none;
-    font-size: 25px;
+    min-height: 20vh;
+    background-color: $Color10;
+    
 }
 .tit-redes{
+    display: flex;
     font-weight: bold;
     text-shadow: 2px 1px 1.5px $Color6;
     color: $Color2;
+    margin: auto;
+}
+.footer__Redes{
+    padding:0;
+    margin: 0;
+    display: flex;
+}
+.footer__Redes li{
+    display: flex;
+    list-style: none;
+    font-size: 15px;
+}
+.contredes{
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "instagram youtube";
+    background-color: $Color9;
+}
+.instagram {
+    grid-area: instagram;
+    
+}
+.youtube{
+    grid-area: youtube;
+}
+.flexred{
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    font-size: 2.5rem;
+    background-color: $Color10;
 }
 .footer__Redes a{
     color: #9D0208;

@@ -28,13 +28,13 @@
 .D { grid-area: D; }
 
 @media (max-width: 840px){
-    .TituloPrincipal{
+    .tit-staff{
         font-size: 3rem;
     }
 }
 
 @media (max-width: 552px){
-    .TituloPrincipal{
+    .tit-staff{
         font-size:1.8rem;
     }
 }

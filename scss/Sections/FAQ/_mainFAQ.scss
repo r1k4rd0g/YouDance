@@ -1,3 +1,32 @@
 .mainFAQ{
     min-height: 60vh;
 }
+.mainFAQ{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+}
+.tit-faq{
+    @extend .basic-flex;
+    @extend .TituloPrincipal;
+    align-items: center;
+    color: #E5383B;
+    font-size: 6rem;
+    font-weight: bold;
+    background-color: $Color8;
+    min-height: 15vh;
+    text-align: center;
+}
+@media (max-width: 840px){
+    .tit-faq{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 552px){
+    .tit-faq{
+        font-size:1.8rem;
+    }
+}
